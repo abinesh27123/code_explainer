@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Retrieve API key from .env
-GOOGLE_API_KEY = os.getenv("AIzaSyBkyjyMFxn9AlxNVZZ3-beOr2-UE6ALfP4")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 # Check if the API key is loaded
 if not GOOGLE_API_KEY:
@@ -40,4 +40,3 @@ if st.button("🤖 Explain Code") and code_input:
             st.error("Error: No explanation received.")
     except Exception as e:
         st.error(f"Error: {e}")
- 
